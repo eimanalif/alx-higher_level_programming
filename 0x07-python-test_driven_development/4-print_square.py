@@ -12,8 +12,6 @@ def print_square(size):
         TypeError: If size is not an int.
         ValueError: If size is < 0.
     """
-
-
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
 
@@ -21,6 +19,7 @@ def print_square(size):
         raise ValueError("size must be >= 0")
 
     print((("#" * size + "\n") * size), end="")
+
 
 if __name__ == "__main__":
     import doctest

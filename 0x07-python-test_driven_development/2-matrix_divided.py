@@ -15,8 +15,6 @@ def matrix_divided(matrix, div):
         TypeError: If div not int or float.
         ZeroDivisionError: If div is zero.
     """
-
-
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
 
@@ -34,6 +32,7 @@ def matrix_divided(matrix, div):
                 raise TypeError("matrix must be a matrix (list of lists) " +
                                 "of integers/floats")
     return [[round(x / div, 2) for x in row] for row in matrix]
+
 
 if __name__ == "__main__":
     import doctest

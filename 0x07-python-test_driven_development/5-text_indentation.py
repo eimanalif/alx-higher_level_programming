@@ -11,8 +11,6 @@ def text_indentation(text):
     Raises:
         TypeError: If text is not str.
     """
-
-
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
@@ -22,6 +20,7 @@ def text_indentation(text):
             [line.strip(" ") for line in text.split(delim)])
 
     print(text, end="")
+
 
 if __name__ == "__main__":
     import doctest
