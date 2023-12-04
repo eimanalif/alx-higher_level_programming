@@ -7,5 +7,5 @@ module for BaseGeometry class
 class BaseGeometry:
     '''BaseGeometry class'''
     def area(self):
-         '''find area'''
-         raise Exception('area() is not implemented')
+        '''find area'''
+        raise Exception('area() is not implemented')
