@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""class student"""
+"""Defines a class Student."""
 
 
-class student:
-    """represnt of student"""
+class Student:
+    """Represent a student."""
+
     def __init__(self, first_name, last_name, age):
-        """intialies student
+        """Initialize a new Student.
         Args:
             first_name (str): The first name of the student.
             last_name (str): The last name of the student.
@@ -16,5 +17,5 @@ class student:
         self.age = age
 
     def to_json(self):
-        """returns a dictionary representation of a student instance"""
+        """Get a dictionary representation of the Student."""
         return self.
