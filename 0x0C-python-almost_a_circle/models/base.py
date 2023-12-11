@@ -10,11 +10,10 @@ class Base:
         if id is not None:
             self.id = id
         else:
-            Base.__nb_objects +=1
+            Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
-
- @staticmethod
+    @staticmethod
     def to_json_string(list_dictionaries):
         '''Jsonifies a dictionary so it's quite rightly and longer.'''
         if list_dictionaries is None or not list_dictionaries:
