@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-    """
+"""
     Find a peak in a list of unsorted integers.
 
     Args:
@@ -9,7 +9,8 @@
     - A peak element from the list.
     """
 
-    def find_peak(list_of_integers):
+
+def find_peak(list_of_integers):
     """BRUTE force implementation for question
     """
     max_i = None
