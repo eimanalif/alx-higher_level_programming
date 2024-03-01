@@ -10,8 +10,6 @@ import urllib.request
 url = sys.argv[1]
 with urllib.request.urlopen(url) as response:
     meta = response.info()
-
-if __name__ == "__main__":
     for header in meta._headers:
         if header[0] == 'x-Request-Id':
             print(header[1])
