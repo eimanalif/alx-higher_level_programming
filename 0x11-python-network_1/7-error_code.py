@@ -13,4 +13,4 @@ if __name__ == "__main__":
     if response.status_code != requests.code.ok:
         print('Error code: {}'.format(response.status_code))
     else:
-        print(re.text)
+        print(response.text)
