@@ -11,5 +11,5 @@ url = sys.argv[1]
 with urllib.request.urlopen(url) as response:
     meta = response.info()
     for header in meta._headers:
-        if header[0] == 'x-Request-Id':
+        if header[0] == 'X-Request-Id':
             print(header[1])
