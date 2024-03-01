@@ -17,4 +17,3 @@ if __name__ == "__main__":
 \t- content: {}
 \t- utf8 content: {}'''.format(type(bytes_content), bytes_content, content)
     print(print_string)
-
